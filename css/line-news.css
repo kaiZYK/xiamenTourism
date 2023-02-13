@@ -1,0 +1,348 @@
+/* 主题中间为980px */
+
+/* 线路头部分 */
+.line-header {
+  width: 980px;
+  height: 55px;
+  font-size: 12px;
+  color: #999999;
+  line-height: 55px;
+  margin: 0 auto;
+  /* 测试 */
+  /* background-color: rgb(158, 16, 87); */
+}
+.line-header > a {
+  color: #1f71ab;
+}
+
+/* 线路部分 */
+.stroke {
+  width: 980px;
+  height: 340px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* 测试 */
+  /* background-color: rgb(16, 91, 158); */
+}
+/* 线路轮播器部分 */
+.stroke-banner {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* 测试 */
+  /* background-color: rgb(158, 16, 127); */
+}
+/* 线路轮播器上方图片 */
+.stroke-banner > img {
+  width: 100%;
+  height: 275px;
+}
+/* 线路轮播器下方盒子 */
+.stroke-banner > div {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-evenly;
+  /* 怪异盒子 */
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #dddddd;
+  border-top: none;
+  /* 测试 */
+  /* background-color: rgb(16, 139, 158); */
+}
+.stroke-banner > div > img {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+/* 第二张照片添加边框 */
+.stroke-banner > div > img:nth-of-type(2) {
+  /* 怪异盒子 */
+  box-sizing: border-box;
+  border: 2px solid #ff8800;
+}
+.stroke-banner > div > img:first-of-type,
+.stroke-banner > div > img:last-of-type {
+  width: 12px;
+  height: 20px;
+  align-self: center;
+}
+.stroke-banner > div > img:first-of-type {
+  margin-right: 10px;
+}
+.stroke-banner > div > img:last-of-type {
+  margin-left: 10px;
+}
+/* 线路行程概要部分 */
+.stroke-summary {
+  width: 460px;
+  height: 315px;
+  /* 测试 */
+  /* background-color: rgb(107, 224, 183); */
+}
+.stroke-summary > img {
+  margin: 15px 0px;
+}
+.stroke-summary > div {
+  width: 100%;
+  height: 232px;
+  /* 测试 */
+  /* background-color: rgb(201, 107, 224); */
+}
+.stroke-summary > div > div:first-of-type {
+  width: 100%;
+  height: 32px;
+  background-color: #6bc1fa;
+  color: #ffffff;
+  line-height: 32px;
+  text-align: center;
+}
+.stroke-summary > div > div:last-of-type {
+  width: 100%;
+  height: 200px;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #dff4ff;
+}
+.stroke-summary > div > div > p {
+  color: #505050;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.stroke-summary > div > div > p > span {
+  display: inline-block;
+  width: 74px;
+  height: 24px;
+  border-radius: 12px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+/* 线路行程概要星星 */
+.start {
+  color: #ff6600;
+  font-size: 18px;
+  background-color: #dff4ff !important;
+}
+
+/* 线路内容内容 */
+.line-content {
+  width: 980px;
+  height: auto;
+  margin: 20px auto 48px auto;
+
+  /* 测试; */
+  /* background-color: #1f71ab; */
+}
+/* 线路内容头部 */
+.line-content-header {
+  width: 100%;
+  height: 45px;
+  background-color: #535d63;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.line-content-header > ul {
+  width: 100%;
+  height: 100%;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.line-content-header > ul > li {
+  width: 90px;
+  height: 40px;
+  margin-top: 5px;
+  float: left;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+.line-content-header > ul > li:first-of-type {
+  background-color: #f6f6f6;
+}
+.line-content-header > ul > li:first-of-type > a {
+  color: #01a2ea;
+  font-weight: 600;
+}
+.line-content-header > ul > li > a {
+  color: #ffffff;
+  font-weight: 600;
+}
+/* 线路内容 线路介绍 */
+.line-content-presentation,
+.line-content-trip {
+  width: 100%;
+  height: 950px;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+}
+/* 指示标题 */
+.line-top {
+  width: 100%;
+  height: 70px;
+  font-size: 24px;
+  line-height: 70px;
+  text-align: center;
+  background-image: url(../img/line.png);
+  background-repeat: no-repeat;
+  background-position: 250px -95px;
+  margin-top: 50px;
+  /* 测试 */
+  /* background-color: #01a2ea; */
+}
+.line-content-left {
+  width: 124px;
+  height: 40px;
+  /* 子绝父相 */
+  position: sticky;
+  top: 45px;
+  float: left;
+  /* 测试 */
+  /* background-color: #01ea7d; */
+}
+.line-content-left > div:first-of-type {
+  width: 60px;
+  height: 30px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  background-color: #01a2ea;
+  border-radius: 3px;
+  margin-left: 40px;
+  margin-right: 12px;
+  float: left;
+}
+
+.line-content-left > div:nth-of-type(2) {
+  width: 1px;
+  height: 36px;
+  margin-right: 10px;
+  background-color: #cdcdcd;
+  float: left;
+}
+
+.line-content-left > div:nth-of-type(3) {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 8px;
+  left: 104px;
+  background-image: url(../img/line.png);
+  background-repeat: no-repeat;
+  background-position: -72px -286px;
+}
+.line-content-center {
+  width: 2px;
+  height: 780px;
+  float: left;
+  background-color: #eeeeee;
+  margin-left: 30px;
+  /* 子绝父相 */
+  position: relative;
+  margin-right: 35px;
+}
+.line-content-center > div:nth-of-type(1) {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  background-image: url(../img/line.png);
+  background-repeat: no-repeat;
+  background-position: -102px -172px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  /* 测试 */
+  /* background-color: #1f71ab; */
+}
+.line-content-center > div:nth-of-type(2) {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: -14px;
+  left: -6px;
+  border-radius: 50%;
+  border: 3px solid #eeeeee;
+}
+
+.line-content-right {
+  width: 750px;
+  height: auto;
+  float: left;
+  /* 测试 */
+  /* background-color: #01ea7d; */
+}
+.line-content-right > div:nth-of-type(1) {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0px 15px 0px;
+  border-bottom: 1px solid #dddddd;
+}
+.line-content-right > div:nth-of-type(2),
+.line-content-right > div:nth-of-type(3),
+.line-content-right > div:nth-of-type(4) {
+  font-size: 16px;
+  padding: 20px 0px 13px 0px;
+  border-bottom: 1px dotted #dddddd;
+}
+.line-content-right > div:nth-of-type(2) > p:first-of-type,
+.line-content-right > div:nth-of-type(3) > p:first-of-type {
+  font-size: 20px;
+  text-indent: 0px;
+}
+.line-content-right > div:nth-of-type(2) > p {
+  text-indent: 2em;
+}
+.line-content-right > div:nth-of-type(2) > p,
+.line-content-right > div:nth-of-type(3) > p {
+  margin-top: 10px;
+}
+.line-content-right > div:nth-of-type(3) > p:first-of-type {
+  margin: 30px 0px 20px 0px;
+}
+.line-content-right > div:nth-of-type(4) {
+  font-size: 18px;
+}
+/* 线路内容 出行须知 */
+
+.line-content-trip {
+  width: 100%;
+  height: 580px;
+  margin-top: 20px;
+}
+.line-content-trip > div:nth-of-type(2) {
+  padding: 0px 30px;
+}
+.line-content-trip > div:nth-of-type(2) > p {
+  background-color: #f6f6f6;
+  padding: 5px 0px;
+  text-indent: 1.5em;
+  overflow: hidden;
+}
+.line-content-trip > div:nth-of-type(2) > p > span {
+  display: inline-block;
+  width: 3px;
+  height: 16px;
+  background-color: #01a2ea;
+  margin-top: -3px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.line-content-trip > div:nth-of-type(2) > ol > li {
+  list-style-type: disc;
+  font-size: 14px;
+  text-indent: 1em;
+  margin: 10px 0px 0px 50px;
+  line-height: 29px;
+}

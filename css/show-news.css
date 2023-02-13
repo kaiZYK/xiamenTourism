@@ -1,0 +1,26 @@
+/* 主题中间为980px */
+.main-content > p:first-of-type {
+  font-size: 12px;
+}
+.main-content > div {
+  margin-top: 10px;
+}
+.main-content > div > img {
+  width: auto;
+  height: auto;
+}
+.main-content > div:first-of-type > img {
+  width: 800px;
+}
+.main-content > div:nth-of-type(4) > img,
+.main-content > div:nth-of-type(5) > img,
+.main-content > div:nth-of-type(6) > img,
+.main-content > div:nth-of-type(8) > img,
+.main-content > div:nth-of-type(10) > img,
+.main-content > div:nth-of-type(11) > img,
+.main-content > div:nth-of-type(13) > img,
+.main-content > div:nth-of-type(14) > img,
+.main-content > div:nth-of-type(16) > img,
+.main-content > div:nth-of-type(18) > img {
+  width: 980px;
+}

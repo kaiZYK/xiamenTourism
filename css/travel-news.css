@@ -1,0 +1,12 @@
+/* 主题中间为980px */
+.main-content > p:first-of-type {
+  font-size: 12px;
+}
+.main-content > p:nth-of-type(2) {
+  margin-top: 80px;
+  text-align: center;
+}
+.main-content > div > img {
+  width: 500px;
+  height: 455px;
+}

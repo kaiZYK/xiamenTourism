@@ -1,0 +1,19 @@
+/* 主题中间为980px */
+.main-content > p:first-of-type {
+  font-size: 12px;
+}
+.main-content > div {
+  margin-bottom: 20px;
+}
+.main-content > div > img {
+  width: 500px;
+  height: 300px;
+}
+.main-content > div:nth-of-type(3) > img {
+  width: 500px;
+  height: 180px;
+}
+.main-content > div:nth-of-type(4) > img {
+  width: 500px;
+  height: 250px;
+}

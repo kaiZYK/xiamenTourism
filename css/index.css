@@ -1,0 +1,825 @@
+/* 设置首页背景 */
+body {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 主题中间为1230px */
+
+/* 头部部分 */
+header {
+  height: 32px;
+  width: 100%;
+  background-color: #111111;
+  margin-top: 16px;
+}
+/* 头部中间 */
+.header {
+  width: 1230px;
+  height: 100%;
+  margin: 0 auto;
+  /* 测试 */
+  /* background-color: #f50606; */
+}
+/* 头部导航 */
+.header > ul {
+  width: 400px;
+  height: 100%;
+  float: right;
+  /* 测试 */
+  /* background-color: rgb(153, 58, 255); */
+}
+/* 头部导航子选项 */
+.header > ul > li {
+  width: 73px;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+  /* 测试 */
+  /* background-color: aquamarine; */
+}
+/* 头部导航子选项添加背景图片 */
+.header > ul > li:empty {
+  background-image: url(../img/lag.png);
+  background-repeat: no-repeat;
+}
+.header > ul > li:nth-of-type(1):hover {
+  background-position: -80px 0px;
+}
+.header > ul > li:nth-of-type(2) {
+  background-position: 0px -34px;
+}
+.header > ul > li:nth-of-type(2):hover {
+  background-position: -80px -34px;
+}
+.header > ul > li:nth-of-type(3) {
+  background-position: 0px -68px;
+}
+.header > ul > li:nth-of-type(3):hover {
+  background-position: -80px -68px;
+}
+.header > ul > li:nth-of-type(4) {
+  background-position: 0px -102px;
+}
+.header > ul > li:nth-of-type(4):hover {
+  background-position: -80px -102px;
+}
+.header > ul > li:last-of-type {
+  width: 98px;
+  font-size: 12px;
+  color: #333333;
+  text-indent: 2.5em;
+  line-height: 32px;
+  background-image: url(../img/b7.png);
+  background-repeat: no-repeat;
+  background-position: 5px 3px;
+  background-size: 20px;
+  background-color: #008ace;
+  margin-left: 10px;
+}
+
+/* 导航栏部分 可导出 */
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #002b49;
+}
+/* 一级导航栏部分 可导出 */
+.nav {
+  width: 1230px;
+  height: 100%;
+  margin: 0 auto;
+  /* 子绝父相 */
+  position: relative;
+  /* 测试 */
+  /* background-color: antiquewhite; */
+}
+/* logo部分 导出时去除 */
+.nav > a > img {
+  position: absolute;
+  top: -32px;
+  left: 0%;
+}
+.nav > ul {
+  width: 80%;
+  height: 100%;
+  margin-left: 240px;
+  /* 测试 */
+  /* background-color: rgb(169, 101, 12); */
+}
+.nav > ul > li {
+  height: 100%;
+  /* 怪异盒子 */
+  box-sizing: border-box;
+  padding: 25px 19.8px;
+  text-align: center;
+  float: left;
+  /* 测试 */
+  /* background-color: rgb(64, 123, 240); */
+}
+.nav > ul > li > a {
+  color: #ffffff;
+  font-weight: bold;
+}
+/* 二级导航栏部分 */
+.nav > ul > li {
+  position: relative;
+}
+/* 二级导航栏隐藏 子绝父相 */
+.nav > ul > li > ul {
+  width: 180px;
+  position: absolute;
+  top: 70px;
+  left: 5px;
+  background-color: rgb(0, 138, 206);
+  display: none;
+}
+.nav > ul > li > ul > li {
+  text-align: left;
+  text-indent: 2em;
+  margin-bottom: 20px;
+}
+.nav > ul > li > ul > li > a {
+  color: #dbf3ff;
+}
+/* 二级导航栏显示 */
+.nav > ul > li:hover ul {
+  display: block;
+}
+.nav > ul > li > ul > li > a:hover {
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+/* 标题部分 */
+.title {
+  width: 100%;
+  height: 340px;
+  background-image: url(../img/bpic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.title-in {
+  width: 1230px;
+  height: 100%;
+  margin: 0 auto;
+}
+.title-in > p {
+  font-size: 56px;
+  color: #ffffff;
+  text-shadow: 3px 2px 1px #4a6978;
+  margin-top: 20px;
+  margin-right: 50px;
+  text-align: right;
+  word-spacing: 15px;
+}
+
+/* 主要内容部分 */
+.main {
+  width: 1230px;
+  height: 320px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* 测试 */
+  /* background-color: #4a6978; */
+}
+/* 侧边导航栏 */
+aside {
+  width: 220px;
+  height: 100%;
+  background-color: #00416c;
+}
+aside > h3 {
+  color: #55c7fa;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  padding: 20px;
+  border-bottom: 1px solid #55c7fa;
+}
+aside > ul {
+  width: 100%;
+}
+aside > ul > li {
+  width: 100%;
+  padding-left: 30px;
+  margin-top: 20px;
+  background-image: url(../img/ql_dot.png);
+  background-repeat: no-repeat;
+  background-position: 16px 8px;
+}
+aside > ul > li > a {
+  color: #ffffff;
+}
+aside > ul > li > a:hover {
+  color: #46bff3;
+}
+/* 轮播图部分 */
+.banner {
+  width: 690px;
+  height: 100%;
+}
+/* 最新咨询 */
+.news {
+  width: 290px;
+  height: 100%;
+  /* 测试 */
+  /* background-color: #55c7fa; */
+}
+/* 最新咨询标题 */
+.news-title {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #a4d7f5;
+  /* 测试 */
+  /* background-color: #ffffff; */
+}
+.news-title > a,
+.news-title > h3 {
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+.news-title > h3 {
+  float: left;
+  border-bottom: 3px solid #1d7aae;
+}
+.news-title > a,
+.content-line-header > a {
+  font-size: 14px;
+  font-style: italic;
+  color: #333333;
+  float: right;
+}
+.news-title > a:hover,
+.content-line-header > a:hover {
+  color: #3389d7;
+}
+/* 最新咨询内容 */
+.new-content {
+  width: 100%;
+  height: 265px;
+  background-color: #ffffff;
+  border: 1px solid #a9d9f8;
+  float: right;
+}
+.new-content > ul {
+  width: 100%;
+  height: 270px;
+}
+.new-content > ul > li {
+  /* 怪异模式 */
+  box-sizing: border-box;
+  padding: 0px 20px;
+  width: 100%;
+  background-image: url(../img/sm_arrow.png);
+  background-repeat: no-repeat;
+  background-position: 10px 18px;
+}
+.new-content > ul > li > a {
+  width: 250px;
+  font-size: 13px;
+  color: #333333;
+  display: inline-block;
+  margin-top: 11px;
+  /* 内容超出部分隐藏 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.new-content > ul > li > a:hover {
+  color: #3389d7;
+  text-decoration: underline;
+}
+
+/* 内容部分 */
+.content {
+  width: 1230px;
+  height: 430px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* 测试 */
+  /* background-color: #1d7aae; */
+}
+/* 精品路线 */
+.content-line {
+  width: 920px;
+  height: 100%;
+  background-color: #ffffff;
+}
+/* 精品路线头部 */
+.content-line-header {
+  width: 100%;
+  height: 60px;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #0062a5;
+}
+.content-line-header > h3,
+.content-line-header > a {
+  color: #ffffff;
+  display: inline-block;
+}
+.content-line-header > h3,
+.content-line-header > ul,
+.content-line-header > ul > li {
+  float: left;
+}
+.content-line-header > ul {
+  margin-left: 175px;
+}
+.content-line-header > ul > li {
+  margin-right: 20px;
+  padding: 2px 10px 5px 10px;
+  background-color: #ffdf5e;
+  border-radius: 5px;
+}
+.content-line-header > ul > li:nth-of-type(2) {
+  background-color: #60bdfe;
+}
+.content-line-header > ul > li:nth-of-type(3) {
+  background-color: #9ce280;
+}
+.content-line-header > ul > li:nth-of-type(4) {
+  background-color: #45d2c1;
+}
+.content-line-header > ul > li:last-of-type {
+  background-color: #fea7ca;
+}
+.content-line-header > ul > li > a {
+  font-size: 14px;
+  color: #6e5800;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.content-line-header > ul > li:hover {
+  background-color: #003960;
+}
+.content-line-header > ul > li:hover a {
+  color: #ffffff;
+}
+/* 精品路线底部 左边 */
+.content-line-left {
+  width: 290px;
+  height: 370px;
+  background-color: #d1e7f4;
+  overflow: hidden;
+  /* 子绝父相 */
+  position: relative;
+  cursor: pointer;
+  float: left;
+}
+.content-line-left > h3 {
+  margin: 15px 0px 0px 15px;
+}
+.content-line-left > h3,
+.content-line-right > ul > li > div > h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.content-line-left > h3 > span,
+.content-line-right > ul > li > div > h3 > span {
+  font-size: 30px;
+  font-style: italic;
+  color: #0061a4;
+  font-weight: bold;
+}
+.content-line-left > a,
+.content-line-right > ul > li > div > a {
+  font-size: 12px;
+  margin-left: 15px;
+  color: #333333;
+}
+.content-line-left > img:first-of-type {
+  position: absolute;
+  top: 130px;
+  left: 214px;
+}
+.content-line-left > img:last-of-type {
+  width: 290px;
+  margin-top: 55px;
+}
+.content-line-left:hover a {
+  color: #3389d7;
+}
+/* 精品路线底部 右边 */
+.content-line-right {
+  width: 630px;
+  height: 370px;
+  float: left;
+}
+.content-line-right > ul {
+  padding: 20px;
+}
+.content-line-right > ul > li {
+  height: 100px;
+  margin-bottom: 20px;
+}
+.content-line-right > ul > li > div {
+  height: 110px;
+  border-bottom: 1px dotted #cbcbcb;
+}
+.content-line-right > ul > li:last-of-type > div {
+  border-bottom: none;
+}
+.content-line-right > ul > li:hover {
+  background-color: #f5f5f5;
+}
+.content-line-right > ul > li > div > img {
+  width: 160px;
+  height: 100px;
+  float: left;
+  margin-right: 15px;
+}
+.content-line-right > ul > li > div > h3 {
+  margin-bottom: 5px;
+}
+.content-line-right > ul > li > div > h3 > span {
+  color: #54a7e3;
+}
+.content-line-right > ul > li > div > a {
+  color: #737373;
+  display: block;
+}
+/* 图片部分 */
+.content-rpcon {
+  width: 290px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  /* 测试 */
+  /* background-color: #f3405b; */
+}
+
+/* 旅游向导部分 */
+.travel {
+  width: 1330px;
+  height: 470px;
+  margin: 0 auto;
+  /* 测试 */
+  /* background-color: #e84d4d; */
+}
+/* 左边箭头按钮和右边箭头按钮 */
+.travel-left,
+.travel-right {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-top: 260px;
+  background-image: url(../img/tg_arrow.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  cursor: pointer;
+  /* 测试 */
+  /* background-color: #a70486; */
+}
+.travel-right {
+  background-image: url(../img/tg_arrow.png);
+  background-position: -55px 0px;
+}
+.travel-left:hover {
+  background-position: 0px -51px;
+}
+.travel-right:hover {
+  background-position: -55px -51px;
+}
+.travel-center,
+.hot,
+.strategy {
+  width: 1230px;
+  height: 470px;
+  margin: 0 auto;
+  float: left;
+  /* 测试 */
+  /* background-color: #e84d4d; */
+}
+/* 旅游向导头部部分 */
+.travel-header {
+  width: 1230px;
+  height: 110px;
+  text-align: center;
+  background-image: url(../img/tit-line.png);
+  background-repeat: no-repeat;
+  background-position: 435px 65px;
+  /* 测试 */
+  /* background-color: #49ffb0; */
+}
+.travel-header > h2 {
+  font-size: 30px;
+  color: #454545;
+  line-height: 130px;
+}
+/* 旅游向导内容部分 */
+.travel-content {
+  width: 1230px;
+  height: 360px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* 测试 */
+  /* background-color: #b649ff; */
+}
+.travel-content > div {
+  width: 230px;
+  height: 100%;
+  /* 子绝父相 */
+  position: relative;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  border: 1px solid #cbcbcb;
+}
+.travel-content > div > a > img {
+  width: 230px;
+  height: 280px;
+  float: left;
+}
+.travel-content > div > ul {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  float: left;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  padding: 10px;
+}
+.travel-content > div > ul > li {
+  width: 95px;
+  height: auto;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  padding-left: 20px;
+  background-image: url(../img/tg_dot.png);
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  float: left;
+}
+.travel-content > div > ul > li > a {
+  font-size: 12px;
+  color: #333333;
+}
+.travel-content > div > ul > li > a:hover {
+  color: #3389d8;
+}
+.travel-content > div:nth-of-type(2) > ul > li:last-of-type {
+  width: auto;
+}
+.travel-content > div:nth-of-type(4) > ul > li:last-of-type {
+  clear: both;
+}
+.travel-content > div > span {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #3f383e;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+/* 热门推荐部分 */
+.hot {
+  height: 590px;
+  float: none;
+}
+/* 热门推荐内容部分 */
+.hot-content {
+  width: 100%;
+  height: 480px;
+  /* 测试 */
+  /* background-color: #b649ff; */
+}
+.hot-content > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.hot-content > ul > li > a > img {
+  width: 230px;
+  height: 230px;
+  cursor: pointer;
+}
+.hot-content > ul > li:first-of-type > a > img {
+  width: 480px;
+}
+.hot-content > ul > li > a > img:hover {
+  opacity: 50%;
+}
+.hot-content > ul > li {
+  /* 子绝父相 */
+  position: relative;
+}
+.hot-content > ul > li > span {
+  color: #ffffff;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px #3f383e;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/* 游记攻略部分 */
+.strategy {
+  height: 580px;
+}
+/* 游记攻略头部 */
+.strategy-header {
+  height: 170px;
+  overflow: hidden;
+  /* 测试 */
+  /* background-color: #0062a5; */
+}
+.strategy-header > h2 {
+  line-height: 50px;
+  margin-top: 40px;
+}
+.strategy-header > p {
+  color: #505050;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.strategy-header > a {
+  color: #1d7aae;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+}
+.strategy-header > a:hover {
+  color: #333333;
+}
+/* 游记攻略内容 */
+.strategy-content {
+  width: 100%;
+  height: 410px;
+  display: flex;
+  justify-content: space-between;
+}
+.strategy-content > div {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* 子绝父相 */
+  position: relative;
+}
+/* mask遮罩层 */
+.strategy-mask {
+  width: 260px;
+  height: 80px;
+  text-align: center;
+  background-color: #ffffff;
+  position: absolute;
+  top: 200px;
+  left: 14px;
+}
+.strategy-mask > p > a {
+  color: #333333;
+}
+.strategy-mask > p:last-of-type {
+  background-image: url(../img/strategy_pos.png);
+  background-repeat: no-repeat;
+  background-position: 85px 0px;
+  margin: 5px 0px 0px 10px;
+}
+.strategy-content > div:nth-of-type(2n) > .strategy-mask > p:last-of-type {
+  margin-top: 25px;
+}
+.strategy-content > div:hover .strategy-mask > p > a {
+  color: #3389d7;
+}
+
+/* 底部 */
+footer {
+  width: 100%;
+  height: 280px;
+  background-color: #282828;
+}
+/* 底部内容部分 */
+.footer-main {
+  width: 1230px;
+  height: 280px;
+  margin: 0 auto;
+  /* 测试 */
+  /* background-color: #f23a3a; */
+}
+.footer-content {
+  width: 100%;
+  height: 210px;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  border-bottom: 1px solid #000000;
+  padding: 35px 0px 20px 10px;
+  /* 测试 */
+  /* background-color: #008ace; */
+}
+.footer-content > div {
+  float: left;
+  /* 测试 */
+  /* background-color: #0061a4; */
+}
+.footer-content > div:first-of-type {
+  color: #ffffff;
+}
+.footer-content > div:first-of-type > p {
+  margin-top: 5px;
+}
+/* 第二个盒子 */
+.footer-content > div:nth-of-type(2) {
+  margin: 0px 55px 0px 50px;
+  font-size: 12px;
+  text-align: center;
+  color: #a5a5a5;
+}
+/* 线条 */
+.footer-content > div:empty {
+  width: 1px;
+  height: 140px;
+  background-color: #424242;
+}
+/* 第四个盒子 */
+.footer-content > div:nth-of-type(4) {
+  width: 300px;
+  font-size: 12px;
+  color: #a5a5a5;
+  margin: 0px 85px 0px 30px;
+}
+/* 最后一个盒子 */
+.footer-content > div:nth-of-type(4) > p,
+.footer-content > div:nth-of-type(6) > p {
+  color: #307dd7;
+  font-size: 16px;
+  text-indent: 1em;
+}
+.footer-content > div > ul {
+  width: 300px;
+  height: auto;
+}
+.footer-content > div > ul > li {
+  padding-left: 16px;
+  margin: 10px 28px 0px 0px;
+  float: left;
+  background-image: url(../img/tg_dot.png);
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+.footer-content > div > ul > li > a {
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer-content > div > ul > li > a:hover {
+  color: #afafaf;
+}
+.footer-content > div:nth-of-type(6) > p {
+  text-indent: 2em;
+}
+.footer-content > div:nth-of-type(6) > ul > li {
+  margin: 10px 0px 0px 15px;
+  background-image: url(../img/arrow_bottom.png);
+  background-repeat: no-repeat;
+  background-position: 0px 10px;
+}
+.footer-content > div:nth-of-type(6) > ul > li > img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.footer-content > div:nth-of-type(6) > ul > li > span {
+  color: #a5a589;
+}
+.footer-content > div:nth-of-type(6) > ul > li > a > img {
+  width: 116px;
+}
+/* 底部结束部分 */
+.footer-end {
+  width: 100%;
+  height: 70px;
+
+  /* 测试 */
+  /* background-color: #0061a4; */
+}
+.footer-end > p {
+  text-align: center;
+  line-height: 70px;
+  color: #999999;
+  border-top: 1px solid #494949;
+}
+.footer-end > p,
+.footer-end > p > a {
+  font-size: 14px;
+}
+.footer-end > p > a {
+  color: #ffffff;
+}
+.footer-end > p > a:hover {
+  color: #afaf91;
+}

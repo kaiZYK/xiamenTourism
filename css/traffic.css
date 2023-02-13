@@ -1,0 +1,204 @@
+/* 主题中间为980px */
+
+/* 主要的内容头部 */
+.main-header {
+  width: 980px;
+  height: 200px;
+  margin: 20px auto 5px auto;
+
+  /* 测试 */
+  /* background-color: aqua; */
+}
+/* 主要的内容导航栏 */
+.main-nav {
+  width: 980px;
+  height: 120px;
+  margin: 0px auto 10px auto;
+  display: flex;
+
+  /* 测试 */
+  /* background-color: aqua; */
+}
+.main-nav > div {
+  width: 140px;
+  height: 120px;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  border: 1px solid #11254a;
+  background-image: url(../img/traffic_menu01_off.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  cursor: pointer;
+}
+.main-nav > div:nth-of-type(2) {
+  background-image: url(../img/traffic_menu02_off.png);
+}
+.main-nav > div:nth-of-type(3) {
+  background-image: url(../img/traffic_menu03_off.png);
+}
+.main-nav > div:nth-of-type(4) {
+  background-image: url(../img/traffic_menu04_off.png);
+}
+.main-nav > div:nth-of-type(5) {
+  background-image: url(../img/traffic_menu05_off.png);
+}
+.main-nav > div:nth-of-type(6) {
+  background-image: url(../img/traffic_menu06_off.png);
+}
+.main-nav > div:nth-of-type(7) {
+  background-image: url(../img/traffic_menu07_off.png);
+}
+.main-nav > div:hover {
+  background-position: 0px -120px;
+}
+
+/* 主要内容出行宝典 */
+.main-trip {
+  width: 980px;
+  height: 300px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+
+  /* 测试 */
+  /* background-color: aqua; */
+}
+.main-trip-left {
+  width: 700px;
+  height: 100%;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  border: 1px solid #11254a;
+}
+.main-trip-left > p {
+  color: #0092df;
+  height: 30px;
+  /* 怪异盒子 */
+  box-sizing: border-box;
+  padding: 6px 0px 0px 40px;
+  background-image: url(../img/ico_book.png);
+  background-repeat: no-repeat;
+  background-position: 15px 5px;
+  /* 测试 */
+  /* background-color: antiquewhite; */
+}
+.main-trip-left > ul {
+  width: 100%;
+  height: auto;
+}
+.main-trip-left > ul > li {
+  width: 100%;
+  height: 38px;
+  /* 怪异盒子 */
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+.main-trip-left > ul > li > div {
+  /* 怪异盒子 */
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border-bottom: 1px dotted #cccccc;
+  background-image: url(../img/ico_arrow.png);
+  background-repeat: no-repeat;
+  background-position: 0px 16px;
+}
+.main-trip-left > ul > li > div > a {
+  color: #333333;
+  font-size: 14px;
+}
+.main-trip-left > ul > li > div > a:hover {
+  color: #3389d7;
+}
+
+.main-trip-right {
+  width: 270px;
+  height: 100%;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  border: 1px solid #999999;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.main-trip-right > img:first-of-type {
+  width: 270px;
+  height: 130px;
+}
+.main-trip-right > img:last-of-type {
+  width: 270px;
+  height: 164px;
+}
+
+/* 主要内容地图 */
+.main-map {
+  width: 980px;
+  height: 610px;
+  margin: 10px auto 35px auto;
+  display: flex;
+  /* 怪异模式 */
+  border: 5px solid #c1d5f5;
+  /* 测试 */
+  /* background-color: aqua; */
+}
+.main-map-left {
+  width: 700px;
+  height: 100%;
+  /* 怪异模式 */
+  border-right: 5px solid #c1d5f5;
+}
+.main-map-left > img {
+  width: 700px;
+  height: 500px;
+}
+.main-map-right {
+  width: 280px;
+  height: 100%;
+}
+.main-map-right-depart {
+  width: 100%;
+  height: 94px;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  /* 测试 */
+  /* background-color: #0092df; */
+}
+.main-map-right-depart > div:nth-of-type(1) {
+  width: 100%;
+  height: 30px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  padding: 5px 10px;
+  background-color: #2960c4;
+}
+.main-map-right-depart > div:nth-of-type(2),
+.main-map-right-target > div {
+  color: #505050;
+  width: 100%;
+  height: 64px;
+  font-size: 14px;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  padding: 18px 10px;
+  background-color: #e4f2ff;
+}
+.main-map-right-depart > div > input,
+.main-map-right-target > div > input {
+  width: 126px;
+  height: 20px;
+}
+.main-map-right-target {
+  width: 100%;
+  height: 145px;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  background-color: #e4f2ff;
+}
+.main-map-right-target > div > a:first-of-type {
+  display: inline-block;
+  margin: 10px 15px 0px 55px;
+}

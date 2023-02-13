@@ -1,0 +1,33 @@
+/* common-4.css:选项卡部分样式文件 ; */
+
+/* 主题中间为980px */
+
+/* 选项卡部分 */
+.option {
+  width: 980px;
+  height: auto;
+  margin: 20px auto;
+  /* 测试 */
+  /* background-color: rgb(51, 255, 0); */
+}
+.option > ul {
+  width: 100%;
+  height: auto;
+}
+.option > ul > li {
+  padding: 10px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 15px;
+  background-color: #25a7ff;
+}
+.option > ul > li:first-of-type {
+  margin-left: 10px;
+}
+.option > ul > li > a {
+  font-size: 18px;
+  color: #ffffff;
+}
+.option > ul > li:hover {
+  background-color: #0089e7;
+}

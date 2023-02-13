@@ -1,0 +1,18 @@
+/* common-3.css: 列表里图片部分样式文件; */
+
+/* 主题中间为980px */
+
+/* 列表图片部分 */
+.list > ul > li > a > div {
+  padding: 0;
+  overflow: hidden;
+}
+.list > ul > li > a > div > img {
+  width: 160px;
+  height: 100px;
+  float: left;
+}
+.list > ul > li > a > div > p {
+  text-indent: 1em;
+  margin-top: 10px;
+}

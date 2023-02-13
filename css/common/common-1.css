@@ -1,0 +1,221 @@
+/* common-1.css:为头部、导航栏、底部样式文件; */
+
+/* 主题中间为980px */
+
+/* 头部部分 */
+header {
+  height: 32px;
+  width: 100%;
+  background-color: #111111;
+  margin-top: 16px;
+}
+/* 头部中间 */
+.header {
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  /* 测试 */
+  /* background-color: #f50606; */
+}
+/* 头部导航 */
+.header > ul {
+  width: 400px;
+  height: 100%;
+  float: right;
+  /* 测试 */
+  /* background-color: rgb(153, 58, 255); */
+}
+/* 头部导航子选项 */
+.header > ul > li {
+  width: 73px;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+  /* 测试 */
+  /* background-color: aquamarine; */
+}
+/* 头部导航子选项添加背景图片 */
+.header > ul > li:empty {
+  background-image: url(../../img/lag.png);
+  background-repeat: no-repeat;
+}
+.header > ul > li:nth-of-type(1):hover {
+  background-position: -80px 0px;
+}
+.header > ul > li:nth-of-type(2) {
+  background-position: 0px -34px;
+}
+.header > ul > li:nth-of-type(2):hover {
+  background-position: -80px -34px;
+}
+.header > ul > li:nth-of-type(3) {
+  background-position: 0px -68px;
+}
+.header > ul > li:nth-of-type(3):hover {
+  background-position: -80px -68px;
+}
+.header > ul > li:nth-of-type(4) {
+  background-position: 0px -102px;
+}
+.header > ul > li:nth-of-type(4):hover {
+  background-position: -80px -102px;
+}
+.header > ul > li:last-of-type {
+  width: 98px;
+  font-size: 12px;
+  color: #333333;
+  text-indent: 2.5em;
+  line-height: 32px;
+  background-image: url(../../img/b7.png);
+  background-repeat: no-repeat;
+  background-position: 5px 3px;
+  background-size: 20px;
+  background-color: #008ace;
+  margin-left: 10px;
+}
+
+/* 导航栏部分 可导出 */
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #002b49;
+}
+/* 一级导航栏部分 可导出 */
+.nav {
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  /* 子绝父相 */
+  position: relative;
+  /* 测试 */
+  /* background-color: antiquewhite; */
+}
+
+.nav > ul {
+  width: 100%;
+  height: 100%;
+  /* margin-left: 240px; */
+  /* 测试 */
+  /* background-color: rgb(169, 101, 12); */
+}
+.nav > ul > li {
+  height: 100%;
+  /* 怪异盒子 */
+  box-sizing: border-box;
+  padding: 22px 21px;
+  text-align: center;
+  float: left;
+  /* 测试 */
+  /* background-color: rgb(64, 123, 240); */
+}
+.nav > ul > li > a {
+  color: #ffffff;
+  font-weight: bold;
+  vertical-align: sub;
+}
+
+.nav > ul > li > a > img {
+  width: 30px;
+  vertical-align: sub;
+}
+/* 底部 */
+footer {
+  width: 100%;
+  height: 280px;
+  background-color: #282828;
+}
+/* 底部内容部分 */
+.footer-main {
+  width: 980px;
+  height: 280px;
+  margin: 0 auto;
+  /* 测试 */
+  /* background-color: #f23a3a; */
+}
+.footer-content {
+  width: 100%;
+  height: 210px;
+  /* 怪异模式 */
+  box-sizing: border-box;
+  border-bottom: 1px solid #000000;
+  padding: 35px 0px 20px 10px;
+  /* 测试 */
+  /* background-color: #008ace; */
+}
+.footer-content > div {
+  float: left;
+  /* 测试 */
+  /* background-color: #0061a4; */
+}
+/* 第一个盒子 */
+.footer-content > div:first-of-type {
+  color: #ffffff;
+}
+.footer-content > div:first-of-type > p {
+  margin-top: 5px;
+}
+/* 线条 */
+.footer-content > div:empty {
+  width: 1px;
+  height: 140px;
+  background-color: #424242;
+  margin: 0px 50px 0px 225px;
+}
+/* 最后一个盒子 */
+.footer-content > div:last-of-type > p {
+  color: #307dd7;
+  font-size: 16px;
+  text-indent: 1em;
+}
+.footer-content > div:last-of-type > ul {
+  width: 300px;
+  height: auto;
+}
+.footer-content > div:last-of-type > ul > li {
+  padding-left: 16px;
+  margin: 10px 28px 0px 0px;
+  float: left;
+  background-image: url(../../img/tg_dot.png);
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+.footer-content > div:last-of-type > p {
+  text-indent: 2em;
+}
+.footer-content > div:last-of-type > ul > li {
+  margin: 10px 0px 0px 15px;
+  background-image: url(../../img/arrow_bottom.png);
+  background-repeat: no-repeat;
+  background-position: 0px 10px;
+}
+.footer-content > div:last-of-type > ul > li > img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.footer-content > div:last-of-type > ul > li > span {
+  color: #a5a589;
+}
+/* 底部结束部分 */
+.footer-end {
+  width: 100%;
+  height: 70px;
+
+  /* 测试 */
+  /* background-color: #0061a4; */
+}
+.footer-end > p {
+  text-align: center;
+  line-height: 70px;
+  color: #999999;
+  border-top: 1px solid #494949;
+}
+.footer-end > p,
+.footer-end > p > a {
+  font-size: 14px;
+}
+.footer-end > p > a {
+  color: #ffffff;
+}
+.footer-end > p > a:hover {
+  color: #afaf91;
+}

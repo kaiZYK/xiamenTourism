@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* 设置超链接*/
+a {
+  text-decoration: none;
+}
+/* 设置列表项 */
+li {
+  list-style-type: none;
+}
+/* 设置清除浮动 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 主题中间为980px */
